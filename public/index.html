@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Drive Real-time App</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+
+    // Functions to trigger download and list permissions
+    function downloadFile(fileId) {
+      socket.emit('download', fileId);
+    }
+
+    function listPermissions(fileId) {
+      socket.emit('listPermissions', fileId);
+    }
+  </script>
+</head>
+<body>
+  <h1>Google Drive Real-time App</h1>
+  <a href="/auth">Connect to Google Drive</a>
+</body>
+</html>
