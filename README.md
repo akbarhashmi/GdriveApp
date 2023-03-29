@@ -16,7 +16,7 @@ This program is a simple Google Drive File Manager that allows users to connect 
 ##### Prerequisites
 - Node.js and npm installed on your machine.
 - Google Cloud Platform project with the Drive API enabled.
-- OAuth 2.0 client credentials (client ID and client secret) for the Google Cloud Platform project.
+- OAuth 2.0 client credentials (client ID and client secret) for the Google Cloud Platform project. You can can these by setting up a Google Drive Api in GCloud and then registering credentials for a web application.
 
 ##### Steps
 1. Clone the repository to your local machine.
